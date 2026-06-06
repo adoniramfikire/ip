@@ -172,6 +172,17 @@
       animation: fadeUp 1s 0.85s forwards;
     }
 
+    .hero-marquee {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.35em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin: 1rem 0 0.5rem;
+      opacity: 0;
+      animation: fadeUp 1s 0.95s forwards;
+    }
+
     .hero-bio {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-size: 1rem;
