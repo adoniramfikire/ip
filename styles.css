@@ -575,6 +575,62 @@
       flex-wrap: wrap;
     }
 
+    .contact-form {
+      max-width: 760px;
+      margin: 3rem auto 0;
+      display: grid;
+      gap: 1.5rem;
+      text-align: left;
+    }
+
+    .contact-form label {
+      display: grid;
+      gap: 0.75rem;
+      font-family: 'DM Mono', monospace;
+      color: var(--gray-light);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--off-white);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1rem;
+      padding: 1rem 1.2rem;
+      border-radius: 14px;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: var(--gold);
+    }
+
+    .contact-submit {
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      cursor: pointer;
+      align-self: start;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .contact-submit:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+    }
+
     .contact-btn {
       font-family: 'DM Mono', monospace;
       font-size: 0.7rem;
