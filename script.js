@@ -59,3 +59,10 @@
           ? 'var(--gold)' : '';
       });
     });
+
+    window.addEventListener('load', () => {
+      const preloader = document.getElementById('preloader');
+      if (!preloader) return;
+      preloader.classList.add('loaded');
+      window.setTimeout(() => preloader.remove(), 4000);
+    });

@@ -25,6 +25,51 @@
       cursor: none;
     }
 
+    a {
+      text-decoration-color: var(--gold);
+    }
+
+    .preloader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--black);
+      z-index: 99999;
+      transition: opacity 0.45s ease, visibility 0.45s ease;
+    }
+
+    .preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-inner {
+      display: grid;
+      place-items: center;
+      gap: 1rem;
+      text-align: center;
+    }
+
+    .preloader-ring {
+      width: 88px;
+      height: 88px;
+      border: 3px solid rgba(201, 168, 76, 0.18);
+      border-top-color: var(--gold);
+      border-radius: 50%;
+      animation: spin 1.3s linear infinite;
+    }
+
+    .preloader-logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 1.05rem;
+      letter-spacing: 0.2em;
+      color: var(--off-white);
+      text-transform: uppercase;
+    }
+
 
     /* Custom cursor */
     .cursor {
